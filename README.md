@@ -115,7 +115,7 @@ This code is fully written by Aditya Giri. If you wish to co-operate with me or 
 
 [MIT License](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2020 - Aditya Giri
+Copyright (c) 2020 adityagirinv
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
