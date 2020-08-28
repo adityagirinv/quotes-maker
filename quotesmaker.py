@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 try:
     from PIL import Image, ImageDraw, ImageFont
     import argparse,os
