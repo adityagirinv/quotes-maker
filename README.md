@@ -107,7 +107,7 @@ Our code currently only supports .png format. Please Use some image format conve
 
 ## Contribution
 
-This code is fully written by Aditya Giri. If you wish to co-operate with me or send an suggestion contact me on ***geotics.yt@gmail.com***
+This code is fully written by adityagirinv and support by @Lablnet to fix many issue. If you wish to co-operate with me or send an suggestion contact me on ***geotics.yt@gmail.com***
 
 ## LICENSE
 
