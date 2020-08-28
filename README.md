@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ## Usage 
 To access help menu run
 ```bash
-quotemaker.py -h
+quotsemaker.py -h
 ```
 There are two modes you can create quotes
 - Manual
@@ -37,7 +37,7 @@ Our code only support's .png format. You can find tons of image format converter
 > Passing a quotes manually would look something like code below.
 
 ```bash
-quotemaker.py -q "Your Quote Goes Here" -a "author(optional)" -t 1 -l test_logo.png
+quotesmaker.py -q "Your Quote Goes Here" -a "author(optional)" -t 1 -l test_logo.png
 ```
 >If you don't pass Author (-a) That place will be left vacant.
 
