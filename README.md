@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ## Usage 
 To access help menu run
 ```bash
-quotsemaker.py -h
+quotesmaker.py -h
 ```
 There are two modes you can create quotes
 - Manual
