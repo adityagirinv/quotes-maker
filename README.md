@@ -7,18 +7,25 @@ We will add more template if we get enough requests
 
 - ***Template #1***
 [![Template 1](https://i.imgur.com/k4q5pVP.jpg)]()
+
 - ***Template #2***
 [![Template 2](https://i.imgur.com/qrVVwHb.jpg)]()
+
 - ***Template #3***
 [![Template 3](https://i.imgur.com/1yNu4VY.jpg)]()
+
 - ***Template #4***
 [![Template 4](https://i.imgur.com/i7thu2L.jpg)]()
+
 - ***Template #5***
 [![Template 5](https://i.imgur.com/DagMkn3.jpg)]()
+
 - ***Template #6***
 [![Template 6](https://i.imgur.com/jvdN8d1.jpg)]()
+
 - ***Template #7***
 [![Template 7](https://i.imgur.com/i8LVSxw.jpg)]()
+
 
 
 ## Requirements
