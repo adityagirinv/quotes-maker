@@ -51,7 +51,11 @@ try:
             if data.author:
                 ret_data1["author"] = data.author
             if data.template:
-                ret_data1["template"] = data.template
+                if data.template <= 0 or data.template > 7:
+                    print("[-] Please Choose template between 1 - 7")
+                    exit()
+                else:
+                    ret_data1["template"] = int(data.template)
             if data.logo:
                 if data.logo[-3:] != "png":
                     print(
@@ -88,13 +92,17 @@ try:
                             data.logo))
                     exit()
             if data.template:
-                ret_data2["template"] = data.template
+                if data.template <= 0 or data.template > 7:
+                    print("[-] Please Choose template between 1 - 7")
+                    exit()
+                else:
+                    ret_data2["template"] = int(data.template)
             return ret_data2
 
 
     def random_dat(typed):
         if typed == 0:
-            return random.randint(1, 4)
+            return random.randint(1, 7)
         elif typed == 1:
             return str(uuid.uuid4().hex)
 
@@ -120,9 +128,9 @@ try:
 
         format_quote = wrap(quote, wd)
         text_width, text_height = draw.textsize(format_quote, font)
-        if num == 3:
+        if num == 7:
             location = (back_img.width / 2 - text_width / 2, int(back_img.height * .6) - text_height / 2 - 18)
-        elif num == 4:
+        elif num == 3:
             location = (back_img.width / 2 - text_width / 2, int(back_img.height * .55) - text_height / 2 - 18)
         else:
             location = (back_img.width / 2 - text_width / 2, back_img.height / 2 - text_height / 2 - 18)
@@ -135,7 +143,7 @@ try:
         elif num == 2:
             crd_location = (int(back_img.width * .7) - text_width1 / 2,
                             back_img.height - int(back_img.height * .1) - text_height1 / 2 - 18)
-        elif num == 3:
+        elif num == 7:
             crd_location = (int(back_img.width * .52) - text_width1 / 2,
                             back_img.height - int(back_img.height * .05) - text_height1 / 2 - 18)
         else:
@@ -144,7 +152,7 @@ try:
 
         font1 = ImageFont.truetype("font/font" + str(f_num), size=35)
 
-        if num != 3:
+        if num != 7 :
             draw.text(crd_location, author, font=font1, fill=(255, 255, 255, 255))
         else:
             draw.text(crd_location, author.upper(), font=font1, fill=(0, 0, 0, 255))
@@ -163,15 +171,27 @@ try:
 
 
     def temp3(quote, author, sz, wd, n, logo):
-        get_temp(3, quote, author, sz, wd, n, logo, "2.ttf")
+        get_temp(3, quote, author, sz, wd, n, logo, "3.otf")
 
 
     def temp4(quote, author, sz, wd, n, logo):
         get_temp(4, quote, author, sz, wd, n, logo, "3.otf")
 
 
+    def temp5(quote, author, sz, wd, n, logo):
+        get_temp(5, quote, author, sz, wd, n, logo, "3.otf")  
+
+
+    def temp6(quote, author, sz, wd, n, logo):
+        get_temp(6, quote, author, sz, wd, n, logo, "3.otf")  
+
+
+    def temp7(quote, author, sz, wd, n, logo):
+        get_temp(7, quote, author, sz, wd, n, logo, "2.ttf")
+   
+
     def quotesmaker(quote, author, n, t_num, logo):
-        if t_num == 1 or t_num == 2 or t_num == 4:
+        if t_num <= 6:
             if len(quote) < 100:
                 sz = 50
                 wd = 27
@@ -184,7 +204,7 @@ try:
             if len(quote) > 300:
                 sz = 25
                 wd = 50
-        if t_num == 3:
+        if t_num == 7:
             if len(quote) < 100:
                 sz = 50
                 wd = 24
@@ -206,6 +226,12 @@ try:
             temp3(quote, author, sz, wd, n, logo)
         if t_num == 4:
             temp4(quote, author, sz, wd, n, logo)
+        if t_num == 5:
+            temp5(quote, author, sz, wd, n, logo)
+        if t_num == 6:
+            temp6(quote, author, sz, wd, n, logo)
+        if t_num == 7:
+            temp7(quote, author, sz, wd, n, logo)
 
 
     def condition_analysis(quote_data):
